@@ -30,6 +30,7 @@ public class Ch14Activity1 extends AppCompatActivity {
             ContentValues contentValues=new ContentValues();
             contentValues.put("stuname","Mike");
             contentValues.put("stutel","13333333333");
+            contentValues.put("stuadd","山东");
             sqLiteDatabase.insert("student",null,contentValues);
             sqLiteDatabase.setTransactionSuccessful();//所有操作结束后，调用此方法，才会将数据真正保存到数据库中
         }catch (Exception e){
